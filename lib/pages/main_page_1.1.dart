@@ -14,7 +14,10 @@ class _MainPageState extends State<MainPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Daryo"),
-        actions: [Icon(Icons.search)],
+        actions: [
+          Container(
+              margin: EdgeInsets.only(right:16),
+              child: Icon(Icons.search))],
       ),
       drawer: Drawer(
         child: ListView(
